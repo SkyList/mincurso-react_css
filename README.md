@@ -4,6 +4,14 @@
 ###Descrição
 Minicurso desenvolvido para a semana acadêmica do curso de Sistemas de Informação, abrangendo o básico do desenvolvimento com React e CSS. 
 
+### Pré requisitos
+__O que você precisa para desenvolver em React:__
+>- Ter o [NodeJs](https://nodejs.org/en/) instalado.
+>- Ter o [React](https://reactjs.org/) instalado. 
+>- Conhecimento intermediário sobre [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript).
+
+### Descrição
+Minicurso desenvolvido para a semana acadêmica do curso de sistemas de informação, este minicurso abrange o básico do desenvolvimento com React e CSS. 
 Em React:
 - [x] Mercado para o React.
 - [x] Vantagens sobre as outras bibliotecas.
