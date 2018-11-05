@@ -1,5 +1,8 @@
-# Minicurso React + CSS3
-### SEMANA ACADÊMICA DO CURSO DE SISTEMAS DE INFORMAÇÃO - Universidade Estadual do Estado do Tocantins (UNITINS)
+#MINICURSO REACT + CSS3
+####SEMANA ACADÊMICA DO CURSO DE SISTEMAS DE INFORMAÇÃO - UNIVERSIDADE ESTADUAL DO TOCANTINS (UNITINS)
+
+###Descrição
+Minicurso desenvolvido para a semana acadêmica do curso de Sistemas de Informação, abrangendo o básico do desenvolvimento com React e CSS. 
 
 ### Pré requisitos
 __O que você precisa para desenvolver em React:__
@@ -16,10 +19,10 @@ Em React:
 - [x] Implementação de uma aplicação em React.
 
 Em CSS:
-- [x] [escreve o que vai fazer ai]
+- [x] Porque animar em CSS?
+- [x] Criação e Animação de componentes
 
-
-__Para executar o projeto, navegue até o diretorio do projeto e use um dos seguintes comando:__
+__Para executar o projeto, navegue até o diretório onde ele se encontra e use um dos seguintes comandos:__
 ``` 
 $ npm install
 $ npm start
@@ -31,9 +34,10 @@ $ yarn start
 ```
 
 __Observação__
-O repositorio possui dois diretorios, onde `/projeto-pronto` é o projeto que será construido durante o minicurso já finalizado, para quem deseja apenas acompanhar. E a o diretorio `/projeto-minicurso` é para quem deseja acompanhar o desenvolvimento do projeto durante o minicurso. 
+O repositório possui dois diretórios, onde `/projeto-pronto` é o projeto já finalizado, para quem deseja apenas acompanhar, que será construído durante o minicurso. E o diretório `/projeto-minicurso` que é para quem deseja desenvolver acompanhando as explicações durante o minicurso. 
 
-#### Ministrado por:
-* 👨‍💻[Anderson Ancilon](https://github.com/) - React
-* 👨‍💻[Matheus Pantoja](https://github.com/SkyList) - React
-* 👨‍💻[Matheus Teixeira](https://github.com/) - CSS
+####Ministrado por:
+* 👨‍💻Anderson Ancilon (@mention) - React
+* 👨‍💻Matheus Pantoja  (@SkyList) - React
+* 👨💻Matheus Teixeira (@matheustsa) - CSS
+
