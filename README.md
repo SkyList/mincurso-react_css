@@ -1,7 +1,8 @@
-#MINICURSO REACT + CSS3
-####SEMANA ACADÊMICA DO CURSO DE SISTEMAS DE INFORMAÇÃO - UNIVERSIDADE ESTADUAL DO TOCANTINS (UNITINS)
+# MINICURSO REACT + CSS3
 
-###Descrição
+#### SEMANA ACADÊMICA DO CURSO DE SISTEMAS DE INFORMAÇÃO - UNIVERSIDADE ESTADUAL DO TOCANTINS (UNITINS)
+
+### Descrição
 Minicurso desenvolvido para a semana acadêmica do curso de Sistemas de Informação, abrangendo o básico do desenvolvimento com React e CSS. 
 
 ### Pré requisitos
@@ -20,6 +21,7 @@ Em React:
 
 Em CSS:
 - [x] Porque animar em CSS?
+- [x] Frameworks CSS
 - [x] Criação e Animação de componentes
 
 __Para executar o projeto, navegue até o diretório onde ele se encontra e use um dos seguintes comandos:__
@@ -39,5 +41,5 @@ O repositório possui dois diretórios, onde `/projeto-pronto` é o projeto já 
 ####Ministrado por:
 * 👨‍💻Anderson Ancilon (@mention) - React
 * 👨‍💻Matheus Pantoja  (@SkyList) - React
-* 👨💻Matheus Teixeira (@matheustsa) - CSS
+* 👨Matheus Teixeira (@matheustsa) - CSS
 
