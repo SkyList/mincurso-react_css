@@ -43,24 +43,22 @@ margin-right: 64px;
 }
 /* #endregion Left content area */
 
+
 /* #region Right content area */
-.visit-card .right-content{
+.visit-card > .right-content {
     background: #f07033;
     width: 60px;
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-.right-content .more-info{
-    background: #fff;
-    padding: 2px;
-}
-
-.right-content td:first-child{
-    text-align: center;
+.right-content > .more-info > div{
+    background: white;
+    padding: 8px;
+    border: 40px;
+    border-color: red;
 }
 
 .right-content .more-info i{
@@ -75,7 +73,7 @@ margin-right: 64px;
     border-bottom: 4px solid #fff;
 }
 
-/* #endregion */
+// #endregion
 
 .more-info{
     margin-top: 5px;
