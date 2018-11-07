@@ -47,28 +47,28 @@ margin-right: 64px;
 /* #region RIGHT CONTENT AREA */
 .visit-card > .right-content {
     background: #f07033;
-    width: 60px;
+    width: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
 }
 
 table {
     border-collapse: collapse;
     text-align: center;
-    vertical-align: middle;
 }
 
 .icon-info {
     color: #f07033;
+    font-size: 24px;
 }
 
 .right-content td.td-icon {
     background-color: white;
-    border: 3px solid #f07033;
+    border: 4px solid #f07033;
     align-items: center;
-    padding: 4px;
+    padding: 8px;
     size: 24px;
 }
 
@@ -78,17 +78,18 @@ table {
     padding-right: 24px;
 }
 
-td.td-endereco {
+.td-endereco {
     background-color: #f07033;
 }
 
-div.text-endereco {
+.text-endereco {
     color: white;
     text-size-adjust: 8px;
 }
 
 
-// ANIMATIONS AND TRANSITIONS
+/* ANIMATIONS AND TRANSITIONS */
+
 .right-content:hover {
     width: 240px;
     transition: .5s;
@@ -102,7 +103,7 @@ div.text-endereco {
 
 .right-content:hover .td-text {
     background-color: white;
-    border: 3px solid #f07033;
+    border: 4px solid #f07033;
     font-size: 12px;
     transition: .5s;
 }
