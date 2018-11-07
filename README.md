@@ -33,4 +33,7 @@ O repositório possui dois diretórios, onde `/projeto-pronto` é o projeto já 
 * 👨‍💻 [Matheus Pantoja](https://www.linkedin.com/in/anderson-ancilon/) - React
 * 👨‍💻 [Matheus Teixeira](https://www.linkedin.com/in/matheus-t-s-abella-680576b3/) - CSS
 
-
+#### Materia de referência: 
+- [📙 Documentação - JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference)
+- [📒 Documentação - Randomuser](https://randomuser.me/documentation)
+- [📘 Documentação - ReactJS](https://reactjs.org/docs/getting-started.html)
