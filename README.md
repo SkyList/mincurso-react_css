@@ -1,7 +1,7 @@
-#MINICURSO REACT + CSS3
-####SEMANA ACADÊMICA DO CURSO DE SISTEMAS DE INFORMAÇÃO - UNIVERSIDADE ESTADUAL DO TOCANTINS (UNITINS)
+# MINICURSO REACT + CSS3
+#### SEMANA ACADÊMICA DO CURSO DE SISTEMAS DE INFORMAÇÃO - UNIVERSIDADE ESTADUAL DO TOCANTINS (UNITINS)
 
-###Descrição
+### Descrição
 Minicurso desenvolvido para a semana acadêmica do curso de Sistemas de Informação, abrangendo o básico do desenvolvimento com React e CSS. 
 
 ### Pré requisitos
@@ -37,7 +37,7 @@ __Observação__
 O repositório possui dois diretórios, onde `/projeto-pronto` é o projeto já finalizado, para quem deseja apenas acompanhar, que será construído durante o minicurso. E o diretório `/projeto-minicurso` que é para quem deseja desenvolver acompanhando as explicações durante o minicurso. 
 
 ####Ministrado por:
-* 👨‍💻Anderson Ancilon (@mention) - React
-* 👨‍💻Matheus Pantoja  (@SkyList) - React
-* 👨💻Matheus Teixeira (@matheustsa) - CSS
+* 👨‍💻 [Anderson Ancilon](https://www.linkedin.com/in/anderson-ancilon/) - React
+* 👨‍💻 [Matheus Pantoja](https://www.linkedin.com/in/anderson-ancilon/) - React
+* 👨‍💻 [Matheus Teixeira](https://www.linkedin.com/in/matheus-t-s-abella-680576b3/) - CSS
 

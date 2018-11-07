@@ -5,7 +5,7 @@ import defaultService from '../helpers/service/default.service';
 class SearchComponent extends Component {
 
     fetchContacts = (e) => {
-        defaultService.getAll()
+        defaultService.getContactsAll()
             .then(res => {
                 this.props.setListContacts(res.data.results)
             })
