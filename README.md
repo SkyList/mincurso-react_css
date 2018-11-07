@@ -20,6 +20,7 @@ Em React:
 
 Em CSS:
 - [x] Porque animar em CSS?
+- [x] Frameworks CSS
 - [x] Criação e Animação de componentes
 
 __Para executar o projeto, navegue até o diretório onde ele se encontra e use um dos seguintes comandos:__

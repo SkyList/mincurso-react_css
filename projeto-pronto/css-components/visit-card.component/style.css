@@ -3,98 +3,110 @@ body{
 }
 
 .visit-card{
-    height: 270px;
+    height: 320px;
     display: flex;
-    font-family: sans-serif;
 }
 
-/* #region Left content area */
+/* #region LEFT CONTENT AREA */
 .visit-card .left-content{
-    background: #fff;
+    background: white;
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-top: 32px;
 }
 
 .left-content .thumbnail img{
-    height: 180px;
+    height: 130px;
     border-radius: 100%;
-    margin: 12px;
-    border: 8px solid #f07033;
+    margin: 8px;
+    border: 5px solid #f07033;
 }
-.left-content .name-content span{
+
+.left-content > .name-surname-job > .name-surname {
     font-size: 22px;
     color: #f07033;
-    border-bottom: 6px solid #f07033;
 }
-/* #endregion */
 
-/* #region Right content area */
-.visit-card .right-content{
+.left-content > .name-surname-job > .job {
+    font-size: 14px;
+}
+
+hr.bar-left {
+border: 0;
+height: 2px;
+background: #f07033;
+margin-left: 64px;
+margin-right: 64px;
+}
+
+/* #endregion LEFT CONTET AREA */
+
+/* #region RIGHT CONTENT AREA */
+.visit-card > .right-content {
     background: #f07033;
     width: 60px;
-    font-size: 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     padding: 20px;
 }
 
-.right-content table{
-    margin-top: 10px;
-}
-
-.right-content .more-info{
-    background: #fff;
-    padding: 2px;
-}
-
-.right-content td:first-child{
+table {
+    border-collapse: collapse;
     text-align: center;
+    vertical-align: middle;
 }
 
-.right-content .more-info i{
-    font-size: 38px;
+.icon-info {
     color: #f07033;
-    margin: 2px;
 }
 
-.right-content h2{
-    margin: 15px 2px 0 2px;
-    color: #fff;
-    border-bottom: 4px solid #fff;
+.right-content td.td-icon {
+    background-color: white;
+    border: 3px solid #f07033;
+    align-items: center;
+    padding: 4px;
+    size: 24px;
 }
 
-/* #endregion */
-
-.more-info{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.more-info .row-info{
-    padding: 10px;
-    display: flex;
-}
-
-.info-text{
+.td-text {
     font-size: 0;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
+td.td-endereco {
+    background-color: #f07033;
+}
+
+div.text-endereco {
+    color: white;
+    text-size-adjust: 8px;
+}
+
+
+// ANIMATIONS AND TRANSITIONS
 .right-content:hover {
-    width: 250px;
+    width: 240px;
+    transition: .5s;
+    padding-left: 50px;
+}
+
+.right-content:hover .icon-info{
+    font-size: 12px;
     transition: .5s;
 }
 
-.right-content:hover .info-text {
-    font-size: 16px;
+.right-content:hover .td-text {
+    background-color: white;
+    border: 3px solid #f07033;
+    font-size: 12px;
     transition: .5s;
 }
 
-.right-content:hover .more-info i {
-    font-size: 20px;
-    transition: .5s;
-}
+
+
+
