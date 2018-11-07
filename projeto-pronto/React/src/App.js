@@ -12,18 +12,22 @@ class App extends Component {
     this.state = {
       listContacts: [],
     }
+
+    //#region busca na api os contatos
     DefaultService.getContactsAll()
       .then(res => {
         this.setState(
           { listContacts: res.data.results })
       })
+    //#endregion
   }
 
-  fillList = (value) => {
-    console.log('lista dentro do child search', value)
-    this.setState({ listContacts: value })
-  }
+  //#region calback que modifica a lista de contatos
+  fillList = (value) => this.setState({ listContacts: value })
+  //#endregion
 
+
+  //#region metodo que preenche o card
   renderContact = (item) =>
     <ContactCardComponent
       picture={item.picture.medium}
@@ -33,6 +37,7 @@ class App extends Component {
       phone={item.phone}
       email={item.email}>
     </ContactCardComponent>
+  //#endregion
 
 
   render() {
@@ -42,14 +47,11 @@ class App extends Component {
           <SeachComponent listOfContacts={this.state.listContacts} callbackfilterContacts={this.fillList}></SeachComponent>
           <button type="button">Fetch</button>
         </div>
-
         <div className="cards">
           {
             this.state.listContacts.map(this.renderContact)
           }
         </div>
-
-
       </div>
     );
   }

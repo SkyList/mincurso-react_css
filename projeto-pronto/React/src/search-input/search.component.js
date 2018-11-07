@@ -12,7 +12,13 @@ class SearchComponent extends Component {
     }
 
     filterContacts = (e) => {
-        this.props.callbackfilterContacts(this.props.listOfContacts.filter(it => it.cell.includes(this.state.searchText)))
+        this.props.callbackfilterContacts(
+            this.props.listOfContacts.filter(it => (
+                it.name.first.includes(this.state.searchText)
+                || it.name.last.includes(this.state.searchText)
+                || it.cell.includes(this.state.searchText))
+            )
+        )
     }
 
 
