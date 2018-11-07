@@ -5,10 +5,9 @@ import defaultService from '../helpers/service/default.service';
 class SearchComponent extends Component {
 
     fetchContacts = (e) => {
-        defaultService.getContactsAll()
-            .then(res => {
-                this.props.setListContacts(res.data.results)
-            })
+        console.log(this.props.listOfContacts)
+        const teste = this.props.listOfContacts.filter(it => it.name.first.includes('ana'))
+        console.log(teste)
     }
 
 

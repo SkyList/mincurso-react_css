@@ -3,6 +3,7 @@ import './App.css';
 
 import SeachComponent from './search-input/search.component'
 import ContactCardComponent from './contact-card/contact-card.component';
+import DefaultService from './helpers/service/default.service';
 
 class App extends Component {
 
@@ -11,6 +12,10 @@ class App extends Component {
     this.state = {
       listContacts: []
     }
+    DefaultService.getContactsAll()
+      .then(res => {
+        this.setState({ listContacts: res.data.results })
+      })
   }
 
   fillList = (value) => {
@@ -18,18 +23,25 @@ class App extends Component {
     this.setState({ listContacts: value })
   }
 
-  renderContact = (item) => {
-    return (
+  renderContact = (item) =>
+    <ContactCardComponent
+      picture={item.picture.medium}
+      title={item.name.title}
+      fullName={`${item.name.first} ${item.name.last}`}
+      cell={item.cell}
+      phone={item.phone}
+      email={item.email}>
+    </ContactCardComponent>
 
-      <ContactCardComponent picture={item.picture.medium} title={item.name.title} fullName={`${item.name.first} ${item.name.last}`} cell={item.cell} phone={item.phone} email={item.email}></ContactCardComponent>
-    )
-  }
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
+        <div className="app-header">
+          <SeachComponent listOfContacts={this.state.listContacts} callbackfilterContacts={this.fillList}></SeachComponent>
+          <button type="button">Fetch</button>
+        </div>
 
-        <SeachComponent listOfContacts={this.state.listContacts} setListContacts={this.fillList}></SeachComponent>
         <div className="cards">
           {
             this.state.listContacts.map(this.renderContact)
