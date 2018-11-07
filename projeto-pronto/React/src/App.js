@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import SeachComponent from './search-input/search.component'
-import ContactCardComponent from './contact-card/contact-card.component';
+import SeachComponent from './components/search-input/search.component'
+import ContactCardComponent from './components/contact-card/contact-card.component';
 import DefaultService from './helpers/service/default.service';
 
 class App extends Component {
@@ -28,8 +28,9 @@ class App extends Component {
 
 
   //#region metodo que preenche o card
-  renderContact = (item) =>
+  renderContact = (item, index) =>
     <ContactCardComponent
+      key={index}
       picture={item.picture.medium}
       title={item.name.title}
       fullName={`${item.name.first} ${item.name.last}`}
@@ -45,7 +46,6 @@ class App extends Component {
       <div className="app">
         <div className="app-header">
           <SeachComponent listOfContacts={this.state.listContacts} callbackfilterContacts={this.fillList}></SeachComponent>
-          <button type="button">Fetch</button>
         </div>
         <div className="cards">
           {

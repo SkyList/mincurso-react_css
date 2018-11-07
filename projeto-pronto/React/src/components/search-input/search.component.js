@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './search.component.css';
-import defaultService from '../helpers/service/default.service';
 
 class SearchComponent extends Component {
 
