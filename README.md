@@ -28,7 +28,7 @@ $ yarn start
 __Observação__
 O repositório possui dois diretórios, onde `/projeto-pronto` é o projeto já finalizado, para quem deseja apenas acompanhar, que será construído durante o minicurso. E o diretório `/projeto-minicurso` que é para quem deseja desenvolver acompanhando as explicações durante o minicurso. 
 
-####Ministrado por:
+#### Ministrado por:
 * 👨‍💻 [Anderson Ancilon](https://www.linkedin.com/in/anderson-ancilon/) - React
 * 👨‍💻 [Matheus Pantoja](https://www.linkedin.com/in/anderson-ancilon/) - React
 * 👨‍💻 [Matheus Teixeira](https://www.linkedin.com/in/matheus-t-s-abella-680576b3/) - CSS

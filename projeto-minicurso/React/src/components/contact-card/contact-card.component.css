@@ -1,0 +1,136 @@
+.visit-card{
+    height: 320px;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+/* #region LEFT CONTENT AREA */
+.visit-card .left-content{
+    background: #FFD9D8;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.left-content .thumbnail img{
+    height: 130px;
+    border-radius: 100%;
+    margin: 8px;
+    border: 5px solid #f07033;
+}
+
+.left-content > .name-surname-job > .name-surname {
+    font-size: 22px;
+    color: #f07033;
+}
+
+.left-content > .name-surname-job > .job {
+    font-size: 14px;
+}
+
+hr.bar-left {
+border: 0;
+height: 2px;
+background: #f07033;
+margin-left: 64px;
+margin-right: 64px;
+}
+
+/* #endregion LEFT CONTET AREA */
+
+/* #region RIGHT CONTENT AREA */
+.visit-card > .right-content {
+    background: #f07033;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 22px;
+
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    margin: -10px;
+}
+
+.icon-info {
+    color: #f07033;
+    font-size: 22pt;
+}
+
+.right-content td.td-icon {
+    background-color: white;
+    border: 3px solid #f07033;
+    align-items: center;
+    padding: 4px;
+    size: 24px;
+}
+
+.td-text {
+    align-self: flex-start;
+    text-align: start;
+    font-size: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+td.td-endereco {
+    background-color: #f07033;
+}
+
+div.text-endereco {
+    color: white;
+    text-size-adjust: 8px;
+}
+
+
+/* ANIMATIONS AND TRANSITIONS*/
+.right-content:hover {
+    width: 260px;
+    transition: .5s;
+    padding-left: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content:hover table{
+    margin: 0px;
+}
+
+.right-content:hover .icon-info{
+    font-size: 12px;
+    transition: .5s;
+}
+
+.right-content:hover .td-text {
+    background-color: white;
+    border: 3px solid #f07033;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+
+.name-surname{
+    font-family: 'Raleway', sans-serif;
+}
+
+.job{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 36pt;
+    text-transform: uppercase;
+}
+
+td .text-info{
+    font-family: 'Lato', sans-serif;
+}
