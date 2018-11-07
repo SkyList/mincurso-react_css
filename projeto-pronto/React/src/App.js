@@ -1,42 +1,57 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import SeachComponent from './search-input/search.component'
-import ContactCardComponent from './contact-card/contact-card.component';
+import SeachComponent from './components/search-input/search.component'
+import ContactCardComponent from './components/contact-card/contact-card.component';
+import DefaultService from './helpers/service/default.service';
 
 class App extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      listContacts: []
+      listContacts: [],
     }
+
+    //#region busca na api os contatos
+    DefaultService.getContactsAll()
+      .then(res => {
+        this.setState(
+          { listContacts: res.data.results })
+      })
+    //#endregion
   }
 
-  fillList = (value) => {
-    console.log('lista dentro do child search', value)
-    this.setState({ listContacts: value })
-  }
+  //#region calback que modifica a lista de contatos
+  fillList = (value) => this.setState({ listContacts: value })
+  //#endregion
 
-  renderContact = (item) => {
-    return (
 
-      <ContactCardComponent picture={item.picture.medium} title={item.name.title} fullName={`${item.name.first} ${item.name.last}`} cell={item.cell} phone={item.phone} email={item.email}></ContactCardComponent>
-    )
-  }
+  //#region metodo que preenche o card
+  renderContact = (item, index) =>
+    <ContactCardComponent
+      key={index}
+      picture={item.picture.medium}
+      title={item.name.title}
+      fullName={`${item.name.first} ${item.name.last}`}
+      cell={item.cell}
+      phone={item.phone}
+      email={item.email}>
+    </ContactCardComponent>
+  //#endregion
+
 
   render() {
     return (
-      <div className="App">
-
-        <SeachComponent listOfContacts={this.state.listContacts} setListContacts={this.fillList}></SeachComponent>
+      <div className="app">
+        <div className="app-header">
+          <SeachComponent listOfContacts={this.state.listContacts} callbackfilterContacts={this.fillList}></SeachComponent>
+        </div>
         <div className="cards">
           {
             this.state.listContacts.map(this.renderContact)
           }
         </div>
-
-
       </div>
     );
   }
