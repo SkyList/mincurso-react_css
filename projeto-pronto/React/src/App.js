@@ -10,11 +10,12 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      listContacts: []
+      listContacts: [],
     }
     DefaultService.getContactsAll()
       .then(res => {
-        this.setState({ listContacts: res.data.results })
+        this.setState(
+          { listContacts: res.data.results })
       })
   }
 

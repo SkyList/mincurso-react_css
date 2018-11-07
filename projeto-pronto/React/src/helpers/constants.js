@@ -47,7 +47,12 @@ const genders = {
     female: "female"
 }
 
+const defaultValues = {
+    fetchValue: 10
+}
+
 export default {
     genders: genders,
-    nationalities: nationalities
+    nationalities: nationalities,
+    defaultValues: defaultValues,
 }

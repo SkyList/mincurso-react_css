@@ -4,10 +4,15 @@ import defaultService from '../helpers/service/default.service';
 
 class SearchComponent extends Component {
 
-    fetchContacts = (e) => {
-        console.log(this.props.listOfContacts)
-        const teste = this.props.listOfContacts.filter(it => it.name.first.includes('ana'))
-        console.log(teste)
+    constructor(props) {
+        super(props)
+        this.state = {
+            searchText: ''
+        }
+    }
+
+    filterContacts = (e) => {
+        this.props.callbackfilterContacts(this.props.listOfContacts.filter(it => it.cell.includes(this.state.searchText)))
     }
 
 
@@ -15,8 +20,8 @@ class SearchComponent extends Component {
         return (
             <div className="search-box">
                 <div className="search-field">
-                    <input type="text" className="search-text" name="" placeholder="Pesquisar..."></input>
-                    <a className="search-btn" onClick={this.fetchContacts}>
+                    <input type="text" className="search-text" onChange={(e) => this.setState({ searchText: e.target.value })} placeholder="Pesquisar..."></input>
+                    <a className="search-btn" onClick={this.filterContacts}>
                         <i className="fas fa-search"></i>
                     </a>
                 </div>
