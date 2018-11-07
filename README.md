@@ -30,7 +30,7 @@ O repositório possui dois diretórios, onde `/projeto-pronto` é o projeto já 
 
 #### Ministrado por:
 * 👨‍💻 [Anderson Ancilon](https://www.linkedin.com/in/anderson-ancilon/) - React
-* 👨‍💻 [Matheus Pantoja](https://www.linkedin.com/in/anderson-ancilon/) - React
+* 👨‍💻 [Matheus Pantoja](https://www.linkedin.com/in/matheus-pantoja-filgueira/) - React
 * 👨‍💻 [Matheus Teixeira](https://www.linkedin.com/in/matheus-t-s-abella-680576b3/) - CSS
 
 #### Materia de referência: 
